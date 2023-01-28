@@ -63,17 +63,17 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setSpacing(0)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.label = QtWidgets.QLabel(self.frame)
+        self.left_motor_label = QtWidgets.QLabel(self.frame)
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
-        self.label.setFont(font)
-        self.label.setStyleSheet("background-color:black;\n"
+        self.left_motor_label.setFont(font)
+        self.left_motor_label.setStyleSheet("background-color:black;\n"
 "color:White;")
-        self.label.setLineWidth(1)
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-        self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
+        self.left_motor_label.setLineWidth(1)
+        self.left_motor_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.left_motor_label.setObjectName("left_motor_label")
+        self.gridLayout_2.addWidget(self.left_motor_label, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame)
         self.frame_2 = QtWidgets.QFrame(self.widget_4)
         self.frame_2.setStyleSheet("background-color:Black;")
@@ -90,14 +90,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_7)
         self.horizontalLayout_2.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushButton = QtWidgets.QPushButton(self.frame_7)
-        self.pushButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.left_forward_button = QtWidgets.QPushButton(self.frame_7)
+        self.left_forward_button.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("QPushButton{\n"
+        self.left_forward_button.setFont(font)
+        self.left_forward_button.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -114,16 +114,16 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_2.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_7)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(0, 40))
+        self.left_forward_button.setObjectName("left_forward_button")
+        self.horizontalLayout_2.addWidget(self.left_forward_button)
+        self.left_reverse_button = QtWidgets.QPushButton(self.frame_7)
+        self.left_reverse_button.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton_2.setFont(font)
-        self.pushButton_2.setStyleSheet("QPushButton{\n"
+        self.left_reverse_button.setFont(font)
+        self.left_reverse_button.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -140,8 +140,8 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout_2.addWidget(self.pushButton_2)
+        self.left_reverse_button.setObjectName("left_reverse_button")
+        self.horizontalLayout_2.addWidget(self.left_reverse_button)
         self.gridLayout_6.addWidget(self.frame_7, 0, 0, 1, 1)
         self.frame_9 = QtWidgets.QFrame(self.frame_2)
         self.frame_9.setMaximumSize(QtCore.QSize(16777215, 70))
@@ -151,17 +151,17 @@ class Ui_MainWindow(object):
         self.frame_9.setObjectName("frame_9")
         self.gridLayout_7 = QtWidgets.QGridLayout(self.frame_9)
         self.gridLayout_7.setObjectName("gridLayout_7")
-        self.horizontalSlider = QtWidgets.QSlider(self.frame_9)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.gridLayout_7.addWidget(self.horizontalSlider, 0, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.frame_9)
+        self.left_motor_slider = QtWidgets.QSlider(self.frame_9)
+        self.left_motor_slider.setOrientation(QtCore.Qt.Horizontal)
+        self.left_motor_slider.setObjectName("left_motor_slider")
+        self.gridLayout_7.addWidget(self.left_motor_slider, 0, 0, 1, 1)
+        self.left_speed_label = QtWidgets.QLabel(self.frame_9)
         font = QtGui.QFont()
         font.setBold(False)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("color:white;")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_7.addWidget(self.label_2, 1, 0, 1, 1)
+        self.left_speed_label.setFont(font)
+        self.left_speed_label.setStyleSheet("color:white;")
+        self.left_speed_label.setObjectName("left_speed_label")
+        self.gridLayout_7.addWidget(self.left_speed_label, 1, 0, 1, 1)
         self.gridLayout_6.addWidget(self.frame_9, 1, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_2)
         self.frame_3 = QtWidgets.QFrame(self.widget_4)
@@ -173,15 +173,15 @@ class Ui_MainWindow(object):
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_4.setSpacing(0)
         self.gridLayout_4.setObjectName("gridLayout_4")
-        self.pushButton_5 = QtWidgets.QPushButton(self.frame_3)
-        self.pushButton_5.setMinimumSize(QtCore.QSize(0, 40))
-        self.pushButton_5.setMaximumSize(QtCore.QSize(300, 16777215))
+        self.left_motor_stop = QtWidgets.QPushButton(self.frame_3)
+        self.left_motor_stop.setMinimumSize(QtCore.QSize(0, 40))
+        self.left_motor_stop.setMaximumSize(QtCore.QSize(300, 16777215))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton_5.setFont(font)
-        self.pushButton_5.setStyleSheet("QPushButton{\n"
+        self.left_motor_stop.setFont(font)
+        self.left_motor_stop.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -198,8 +198,8 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.gridLayout_4.addWidget(self.pushButton_5, 0, 0, 1, 1)
+        self.left_motor_stop.setObjectName("left_motor_stop")
+        self.gridLayout_4.addWidget(self.left_motor_stop, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_3)
         self.horizontalLayout.addWidget(self.widget_4)
         self.widget_3 = QtWidgets.QWidget(self.bottom_widget)
@@ -219,16 +219,16 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_3.setSpacing(0)
         self.gridLayout_3.setObjectName("gridLayout_3")
-        self.label_3 = QtWidgets.QLabel(self.frame_4)
+        self.right_motor_label = QtWidgets.QLabel(self.frame_4)
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("background-color:black;\n"
+        self.right_motor_label.setFont(font)
+        self.right_motor_label.setStyleSheet("background-color:black;\n"
 "color:White;")
-        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.gridLayout_3.addWidget(self.label_3, 0, 0, 1, 1)
+        self.right_motor_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.right_motor_label.setObjectName("right_motor_label")
+        self.gridLayout_3.addWidget(self.right_motor_label, 0, 0, 1, 1)
         self.verticalLayout_3.addWidget(self.frame_4)
         self.frame_5 = QtWidgets.QFrame(self.widget_3)
         self.frame_5.setStyleSheet("background-color:Black;")
@@ -245,14 +245,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_8)
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.frame_8)
-        self.pushButton_4.setMinimumSize(QtCore.QSize(0, 40))
+        self.right_reverse_button = QtWidgets.QPushButton(self.frame_8)
+        self.right_reverse_button.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton_4.setFont(font)
-        self.pushButton_4.setStyleSheet("QPushButton{\n"
+        self.right_reverse_button.setFont(font)
+        self.right_reverse_button.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -269,16 +269,16 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.horizontalLayout_3.addWidget(self.pushButton_4)
-        self.pushButton_3 = QtWidgets.QPushButton(self.frame_8)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(0, 40))
+        self.right_reverse_button.setObjectName("right_reverse_button")
+        self.horizontalLayout_3.addWidget(self.right_reverse_button)
+        self.right_forward_button = QtWidgets.QPushButton(self.frame_8)
+        self.right_forward_button.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton_3.setFont(font)
-        self.pushButton_3.setStyleSheet("QPushButton{\n"
+        self.right_forward_button.setFont(font)
+        self.right_forward_button.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -295,8 +295,8 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout_3.addWidget(self.pushButton_3)
+        self.right_forward_button.setObjectName("right_forward_button")
+        self.horizontalLayout_3.addWidget(self.right_forward_button)
         self.verticalLayout_4.addWidget(self.frame_8)
         self.frame_10 = QtWidgets.QFrame(self.frame_5)
         self.frame_10.setMaximumSize(QtCore.QSize(16777215, 70))
@@ -306,14 +306,14 @@ class Ui_MainWindow(object):
         self.frame_10.setObjectName("frame_10")
         self.gridLayout_8 = QtWidgets.QGridLayout(self.frame_10)
         self.gridLayout_8.setObjectName("gridLayout_8")
-        self.horizontalSlider_2 = QtWidgets.QSlider(self.frame_10)
-        self.horizontalSlider_2.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider_2.setObjectName("horizontalSlider_2")
-        self.gridLayout_8.addWidget(self.horizontalSlider_2, 0, 0, 1, 1)
-        self.label_4 = QtWidgets.QLabel(self.frame_10)
-        self.label_4.setStyleSheet("color:White;")
-        self.label_4.setObjectName("label_4")
-        self.gridLayout_8.addWidget(self.label_4, 1, 0, 1, 1)
+        self.right_motor_slider = QtWidgets.QSlider(self.frame_10)
+        self.right_motor_slider.setOrientation(QtCore.Qt.Horizontal)
+        self.right_motor_slider.setObjectName("right_motor_slider")
+        self.gridLayout_8.addWidget(self.right_motor_slider, 0, 0, 1, 1)
+        self.right_speed_label = QtWidgets.QLabel(self.frame_10)
+        self.right_speed_label.setStyleSheet("color:White;")
+        self.right_speed_label.setObjectName("right_speed_label")
+        self.gridLayout_8.addWidget(self.right_speed_label, 1, 0, 1, 1)
         self.verticalLayout_4.addWidget(self.frame_10)
         self.verticalLayout_3.addWidget(self.frame_5)
         self.frame_6 = QtWidgets.QFrame(self.widget_3)
@@ -325,15 +325,15 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_5.setSpacing(0)
         self.gridLayout_5.setObjectName("gridLayout_5")
-        self.pushButton_6 = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton_6.setMinimumSize(QtCore.QSize(0, 40))
-        self.pushButton_6.setMaximumSize(QtCore.QSize(300, 16777215))
+        self.right_motor_stop = QtWidgets.QPushButton(self.frame_6)
+        self.right_motor_stop.setMinimumSize(QtCore.QSize(0, 40))
+        self.right_motor_stop.setMaximumSize(QtCore.QSize(300, 16777215))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(False)
-        self.pushButton_6.setFont(font)
-        self.pushButton_6.setStyleSheet("QPushButton{\n"
+        self.right_motor_stop.setFont(font)
+        self.right_motor_stop.setStyleSheet("QPushButton{\n"
 "border-color: White;\n"
 "background-color:#0074a9;\n"
 "border-style: outset;\n"
@@ -350,8 +350,8 @@ class Ui_MainWindow(object):
 "background-color:green;\n"
 "}\n"
 "")
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.gridLayout_5.addWidget(self.pushButton_6, 0, 0, 1, 1)
+        self.right_motor_stop.setObjectName("right_motor_stop")
+        self.gridLayout_5.addWidget(self.right_motor_stop, 0, 0, 1, 1)
         self.verticalLayout_3.addWidget(self.frame_6)
         self.horizontalLayout.addWidget(self.widget_3)
         self.verticalLayout.addWidget(self.bottom_widget)
@@ -364,16 +364,16 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.main_heading_label.setText(_translate("MainWindow", "Motor Control Test"))
-        self.label.setText(_translate("MainWindow", "Left Motor"))
-        self.pushButton.setText(_translate("MainWindow", "Forward"))
-        self.pushButton_2.setText(_translate("MainWindow", "Reverse"))
-        self.label_2.setText(_translate("MainWindow", "Speed : "))
-        self.pushButton_5.setText(_translate("MainWindow", "Stop"))
-        self.label_3.setText(_translate("MainWindow", "Right Motor"))
-        self.pushButton_4.setText(_translate("MainWindow", "Reverse"))
-        self.pushButton_3.setText(_translate("MainWindow", "Forward"))
-        self.label_4.setText(_translate("MainWindow", "Speed : "))
-        self.pushButton_6.setText(_translate("MainWindow", "Stop"))
+        self.left_motor_label.setText(_translate("MainWindow", "Left Motor"))
+        self.left_forward_button.setText(_translate("MainWindow", "Forward"))
+        self.left_reverse_button.setText(_translate("MainWindow", "Reverse"))
+        self.left_speed_label.setText(_translate("MainWindow", "Speed : "))
+        self.left_motor_stop.setText(_translate("MainWindow", "Stop"))
+        self.right_motor_label.setText(_translate("MainWindow", "Right Motor"))
+        self.right_reverse_button.setText(_translate("MainWindow", "Reverse"))
+        self.right_forward_button.setText(_translate("MainWindow", "Forward"))
+        self.right_speed_label.setText(_translate("MainWindow", "Speed : "))
+        self.right_motor_stop.setText(_translate("MainWindow", "Stop"))
 
 
 if __name__ == "__main__":
@@ -382,5 +382,5 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    MainWindow.show()
+    MainWindow.showMaximized()
     sys.exit(app.exec_())

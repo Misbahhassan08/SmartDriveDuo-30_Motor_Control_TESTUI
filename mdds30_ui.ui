@@ -144,7 +144,7 @@ color:White;</string>
               <number>0</number>
              </property>
              <item row="0" column="0">
-              <widget class="QLabel" name="label">
+              <widget class="QLabel" name="left_motor_label">
                <property name="font">
                 <font>
                  <pointsize>14</pointsize>
@@ -200,7 +200,7 @@ color:White;</string>
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="pushButton">
+                 <widget class="QPushButton" name="left_forward_button">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -239,7 +239,7 @@ background-color:green;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_2">
+                 <widget class="QPushButton" name="left_reverse_button">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -299,14 +299,14 @@ background-color:green;
                </property>
                <layout class="QGridLayout" name="gridLayout_7">
                 <item row="0" column="0">
-                 <widget class="QSlider" name="horizontalSlider">
+                 <widget class="QSlider" name="left_motor_slider">
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
                  </widget>
                 </item>
                 <item row="1" column="0">
-                 <widget class="QLabel" name="label_2">
+                 <widget class="QLabel" name="left_speed_label">
                   <property name="font">
                    <font>
                     <bold>false</bold>
@@ -354,7 +354,7 @@ background-color:green;
               <number>0</number>
              </property>
              <item row="0" column="0">
-              <widget class="QPushButton" name="pushButton_5">
+              <widget class="QPushButton" name="left_motor_stop">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -459,7 +459,7 @@ background-color:green;
               <number>0</number>
              </property>
              <item row="0" column="0">
-              <widget class="QLabel" name="label_3">
+              <widget class="QLabel" name="right_motor_label">
                <property name="font">
                 <font>
                  <pointsize>14</pointsize>
@@ -512,7 +512,7 @@ color:White;</string>
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="pushButton_4">
+                 <widget class="QPushButton" name="right_reverse_button">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -551,7 +551,7 @@ background-color:green;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_3">
+                 <widget class="QPushButton" name="right_forward_button">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -611,14 +611,14 @@ background-color:green;
                </property>
                <layout class="QGridLayout" name="gridLayout_8">
                 <item row="0" column="0">
-                 <widget class="QSlider" name="horizontalSlider_2">
+                 <widget class="QSlider" name="right_motor_slider">
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
                  </widget>
                 </item>
                 <item row="1" column="0">
-                 <widget class="QLabel" name="label_4">
+                 <widget class="QLabel" name="right_speed_label">
                   <property name="styleSheet">
                    <string notr="true">color:White;</string>
                   </property>
@@ -661,7 +661,7 @@ background-color:green;
               <number>0</number>
              </property>
              <item row="0" column="0">
-              <widget class="QPushButton" name="pushButton_6">
+              <widget class="QPushButton" name="right_motor_stop">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
