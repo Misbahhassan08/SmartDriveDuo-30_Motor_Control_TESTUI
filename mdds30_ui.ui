@@ -300,6 +300,9 @@ background-color:green;
                <layout class="QGridLayout" name="gridLayout_7">
                 <item row="0" column="0">
                  <widget class="QSlider" name="left_motor_slider">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:White;</string>
+                  </property>
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
@@ -612,6 +615,9 @@ background-color:green;
                <layout class="QGridLayout" name="gridLayout_8">
                 <item row="0" column="0">
                  <widget class="QSlider" name="right_motor_slider">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:White;</string>
+                  </property>
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
